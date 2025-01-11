@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>RTOS概述</title>
-    <url>/2023/11/05/RTOS%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<p>1.定义：<br>    RTOS - Real-time operating system，即实时操作系统，又称即时操作系统，其是一种通用的任务管理框架，用于管理任务的运行和任务之间的交互，能够保证事件得到实时处理。与一般的操作系统相比，RTOS最大的特色是“实时性”，若有一个任务需要被执行，RTOS会在规定时间内执行该任务，而不会有较长的延时。</p>
-<p>2.组成要素：<br>    (1)实时性 - 实时并不意味着快，实时是指在规定的时间内对事件进行响应；<br>    (2)操作系统 - 一种提供任务管理和协调的控制功能的系统软件；<br>    (3)嵌入式 - 运行在特定的嵌入式硬件上，功能可以裁剪，代码可以移植。</p>
-<p>3.原理：</p>
-<p>4.分类：</p>
-]]></content>
-      <categories>
-        <category>RTOS</category>
-      </categories>
-      <tags>
-        <tag>RTOS</tag>
-        <tag>操作系统</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>C语言基础</title>
     <url>/2023/11/21/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<p>一、关键字<br>    C语言的关键字是具有特殊含义的保留字，它们在编程中具有特定的用途，不能被用作标识符（变量名、函数名等）。以下是C语言的关键字：</p>
@@ -90,6 +74,22 @@
       </categories>
       <tags>
         <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RTOS概述</title>
+    <url>/2023/11/05/RTOS%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<p>1.定义：<br>    RTOS - Real-time operating system，即实时操作系统，又称即时操作系统，其是一种通用的任务管理框架，用于管理任务的运行和任务之间的交互，能够保证事件得到实时处理。与一般的操作系统相比，RTOS最大的特色是“实时性”，若有一个任务需要被执行，RTOS会在规定时间内执行该任务，而不会有较长的延时。</p>
+<p>2.组成要素：<br>    (1)实时性 - 实时并不意味着快，实时是指在规定的时间内对事件进行响应；<br>    (2)操作系统 - 一种提供任务管理和协调的控制功能的系统软件；<br>    (3)嵌入式 - 运行在特定的嵌入式硬件上，功能可以裁剪，代码可以移植。</p>
+<p>3.原理：</p>
+<p>4.分类：</p>
+]]></content>
+      <categories>
+        <category>RTOS</category>
+      </categories>
+      <tags>
+        <tag>RTOS</tag>
+        <tag>操作系统</tag>
       </tags>
   </entry>
   <entry>
@@ -182,6 +182,20 @@
       </tags>
   </entry>
   <entry>
+    <title>代码调试概述</title>
+    <url>/2023/10/29/%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<p>1.代码调试概念：<br>    调试一般是指通过一些方法手段发现、定位软件运行中的错误并加以修复的过程。</p>
+<p>2.代码调试作用：<br>    (1)每开发若干个模块后进行相应的代码调试，可以验证模块功能是否符合预期，更早地检测并修改软件模块的错误，可以避免在后期测试阶段一次性发现大量的、复杂的软件问题，在总体上可以提升软件开发的效率；<br>    (2)当软件运行与预期不符时，使用合适的调试方法可以快速定位到软件问题的根源，能够提升解决软件问题的效率；<br>    (3)通过调试可以了解程序的实际执行过程，加深开发人员对软件和系统的理解，提升其对代码的感知力和控制力。</p>
+<p>3.代码调试常用方法：<br>    (1)通过输出Trace&#x2F;Log调试代码；<br>        a.操作：<br>        b.适用场景：<br>    (2)通过Pull-Up&#x2F;Pull-Down IO调试代码；<br>        a.操作：<br>        b.适用场景：<br>    (3)通过查看外设寄存器调试代码；<br>        a.操作：<br>        b.适用场景：<br>    (4)通过查看CPU寄存器以及堆栈调试代码；<br>        a.操作：<br>        b.适用场景：<br>    (5)通过设置断点调试代码；<br>        a.操作：<br>        b.适用场景：</p>
+]]></content>
+      <categories>
+        <category>代码调试</category>
+      </categories>
+      <tags>
+        <tag>代码调试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2024/12/29/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -216,33 +230,6 @@
       </tags>
   </entry>
   <entry>
-    <title>代码调试概述</title>
-    <url>/2023/10/29/%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<p>1.代码调试概念：<br>    调试一般是指通过一些方法手段发现、定位软件运行中的错误并加以修复的过程。</p>
-<p>2.代码调试作用：<br>    (1)每开发若干个模块后进行相应的代码调试，可以验证模块功能是否符合预期，更早地检测并修改软件模块的错误，可以避免在后期测试阶段一次性发现大量的、复杂的软件问题，在总体上可以提升软件开发的效率；<br>    (2)当软件运行与预期不符时，使用合适的调试方法可以快速定位到软件问题的根源，能够提升解决软件问题的效率；<br>    (3)通过调试可以了解程序的实际执行过程，加深开发人员对软件和系统的理解，提升其对代码的感知力和控制力。</p>
-<p>3.代码调试常用方法：<br>    (1)通过输出Trace&#x2F;Log调试代码；<br>        a.操作：<br>        b.适用场景：<br>    (2)通过Pull-Up&#x2F;Pull-Down IO调试代码；<br>        a.操作：<br>        b.适用场景：<br>    (3)通过查看外设寄存器调试代码；<br>        a.操作：<br>        b.适用场景：<br>    (4)通过查看CPU寄存器以及堆栈调试代码；<br>        a.操作：<br>        b.适用场景：<br>    (5)通过设置断点调试代码；<br>        a.操作：<br>        b.适用场景：</p>
-]]></content>
-      <categories>
-        <category>代码调试</category>
-      </categories>
-      <tags>
-        <tag>代码调试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件设计开发流程概述</title>
-    <url>/2023/10/29/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>软件设计</category>
-      </categories>
-      <tags>
-        <tag>软件设计开发流程</tag>
-        <tag>V-Cycle</tag>
-        <tag>ASPICE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>单片机概述</title>
     <url>/2023/11/18/%E5%8D%95%E7%89%87%E6%9C%BA%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<p>1.基本概念：<br>    单片机（Microcontroller），又常称为MCU（Microcontorller Uint），其是一种集成了中央处理器（CPU）、内存（RAM和ROM）、输入\输出端口（I\O）和定时器等功能于一体的微型计算机，其通常被用于嵌入式系统中以控制各种电子设备和系统。</p>
@@ -256,6 +243,19 @@
       <tags>
         <tag>MCU</tag>
         <tag>单片机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件设计开发流程概述</title>
+    <url>/2023/10/29/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>软件设计</category>
+      </categories>
+      <tags>
+        <tag>软件设计开发流程</tag>
+        <tag>V-Cycle</tag>
+        <tag>ASPICE</tag>
       </tags>
   </entry>
   <entry>
