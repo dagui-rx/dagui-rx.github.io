@@ -93,6 +93,17 @@
       </tags>
   </entry>
   <entry>
+    <title>UML概述</title>
+    <url>/2023/10/29/UML%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>UML</category>
+      </categories>
+      <tags>
+        <tag>UML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>探索 Windows 注册表中的应用卸载信息</title>
     <url>/2024/12/23/Windows%E6%B3%A8%E5%86%8C%E8%A1%A8/</url>
     <content><![CDATA[<p>Windows 系统通过注册表管理了大量系统信息，其中应用程序的安装和卸载信息则集中存放在以下两个路径中：</p>
@@ -171,33 +182,6 @@
       </tags>
   </entry>
   <entry>
-    <title>UML概述</title>
-    <url>/2023/10/29/UML%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>UML</category>
-      </categories>
-      <tags>
-        <tag>UML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo指令</title>
-    <url>/2025/01/11/hexo%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<h2 id="1-hexo-init"><a href="#1-hexo-init" class="headerlink" title="1.hexo init"></a>1.hexo init</h2><p>初始化一个新的hexo项目</p>
-<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init myblog</span><br></pre></td></tr></table></figure>
-<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>此命令会在当前目录下创建一个新的hexo项目(myblog文件夹)，并自动安装hexo的基本文件和目录(创建一个名为_config.yml的配置文件，并创建一个名为source的文件夹，其中包含一个名为_posts的子文件夹，用于存放文章)。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2024/12/29/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -216,6 +200,22 @@
 ]]></content>
   </entry>
   <entry>
+    <title>hexo指令</title>
+    <url>/2025/01/11/hexo%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="1-hexo-init"><a href="#1-hexo-init" class="headerlink" title="1.hexo init"></a>1.hexo init</h2><p>初始化一个新的hexo项目</p>
+<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init myblog</span><br></pre></td></tr></table></figure>
+<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>此命令会在当前目录下创建一个新的hexo项目(myblog文件夹)，并自动安装hexo的基本文件和目录(创建一个名为_config.yml的配置文件，并创建一个名为source的文件夹，其中包含一个名为_posts的子文件夹，用于存放文章)。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>代码调试概述</title>
     <url>/2023/10/29/%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<p>1.代码调试概念：<br>    调试一般是指通过一些方法手段发现、定位软件运行中的错误并加以修复的过程。</p>
@@ -227,6 +227,19 @@
       </categories>
       <tags>
         <tag>代码调试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件设计开发流程概述</title>
+    <url>/2023/10/29/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>软件设计</category>
+      </categories>
+      <tags>
+        <tag>软件设计开发流程</tag>
+        <tag>V-Cycle</tag>
+        <tag>ASPICE</tag>
       </tags>
   </entry>
   <entry>
@@ -243,19 +256,6 @@
       <tags>
         <tag>MCU</tag>
         <tag>单片机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件设计开发流程概述</title>
-    <url>/2023/10/29/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>软件设计</category>
-      </categories>
-      <tags>
-        <tag>软件设计开发流程</tag>
-        <tag>V-Cycle</tag>
-        <tag>ASPICE</tag>
       </tags>
   </entry>
   <entry>
