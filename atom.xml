@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-01-11T09:37:57.397Z</updated>
+  <updated>2025-01-11T13:25:59.621Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="http://example.com/2025/01/11/hexo%E6%8C%87%E4%BB%A4/"/>
     <id>http://example.com/2025/01/11/hexo%E6%8C%87%E4%BB%A4/</id>
     <published>2025-01-11T07:26:58.000Z</published>
-    <updated>2025-01-11T09:37:57.397Z</updated>
+    <updated>2025-01-11T13:25:59.621Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;hexo-init&quot;&gt;&lt;a href=&quot;#hexo-init&quot; class=&quot;headerlink&quot; title=&quot;hexo init&quot;&gt;&lt;/a&gt;hexo init&lt;/h2&gt;&lt;p&gt;初始化一个新的hexo项目&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;1-hexo-init&quot;&gt;&lt;a href=&quot;#1-hexo-init&quot; class=&quot;headerlink&quot; title=&quot;1.hexo init&quot;&gt;&lt;/a&gt;1.hexo init&lt;/h2&gt;&lt;p&gt;初始化一个新的hexo项目&lt;/p&gt;
 &lt;h3 id=&quot;用法&quot;&gt;&lt;a</summary>
         
       
