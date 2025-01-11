@@ -1,93 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>C语言基础</title>
-    <url>/2023/11/21/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<p>一、关键字<br>    C语言的关键字是具有特殊含义的保留字，它们在编程中具有特定的用途，不能被用作标识符（变量名、函数名等）。以下是C语言的关键字：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">auto      double    int       struct</span><br><span class="line">break     else      long      switch</span><br><span class="line">case      enum      register  typedef</span><br><span class="line">char      extern    return    union</span><br><span class="line">const     float     short     unsigned</span><br><span class="line">continue  for       signed    void</span><br><span class="line">default   goto      sizeof    volatile</span><br><span class="line">do        if        static    while</span><br></pre></td></tr></table></figure>
-<p>下面是这些关键字的详细解释：<br>    1. <strong>auto：</strong><br>        - <code>auto</code> 关键字用于声明自动变量。自动变量是在函数内部声明的，其生命周期与函数调用的生命周期相同。<br>    2. <strong>break：</strong><br>        - <code>break</code> 用于在循环或 switch 语句中提前终止执行，跳出循环或 switch。<br>    3. <strong>case：</strong><br>        - <code>case</code> 用于 switch 语句中，表示匹配某个值时执行的代码块。<br>    4. <strong>char：</strong><br>        - <code>char</code> 用于声明字符类型的变量或函数返回值。<br>    5. <strong>const：</strong><br>        - <code>const</code> 用于声明常量，表示变量的值不能被修改。<br>    6. <strong>continue：</strong><br>        - <code>continue</code> 用于结束当前循环的当前迭代，继续下一次迭代。<br>    7. <strong>default：</strong><br>        - <code>default</code> 用于 switch 语句中，表示没有匹配到任何 case 时执行的代码块。<br>    8. <strong>do：</strong><br>        - <code>do</code> 用于构建 do-while 循环。<br>    9. <strong>double：</strong><br>        - <code>double</code> 用于声明双精度浮点数类型的变量。<br>    10. <strong>else：</strong><br>        - <code>else</code> 用于 if 语句中，表示在条件不满足时执行的代码块。<br>    11. <strong>enum：</strong><br>        - <code>enum</code> 用于声明枚举类型。<br>    12. <strong>extern：</strong><br>        - <code>extern</code> 用于声明外部变量或函数，表示这些变量或函数是在其他文件中定义的。<br>    13. <strong>float：</strong><br>        - <code>float</code> 用于声明单精度浮点数类型的变量。<br>    14. <strong>for：</strong><br>        - <code>for</code> 用于构建 for 循环。<br>    15. <strong>goto：</strong><br>        - <code>goto</code> 用于无条件跳转到程序中的标记语句。<br>    16. <strong>if：</strong><br>        - <code>if</code> 用于构建条件语句。<br>    17. <strong>int：</strong><br>    - <code>int</code> 用于声明整数类型的变量。<br>    18. <strong>long：</strong><br>        - <code>long</code> 用于声明长整数类型的变量。<br>    19. <strong>register：</strong><br>        - <code>register</code> 用于声明寄存器变量，提示编译器将变量存储在寄存器中，以提高访问速度。<br>    20. <strong>return：</strong><br>        - <code>return</code> 用于从函数中返回值。<br>    21. <strong>short：</strong><br>        - <code>short</code> 用于声明短整数类型的变量。<br>    22. <strong>signed：</strong><br>        - <code>signed</code> 用于声明有符号整数类型的变量。<br>    23. <strong>sizeof：</strong><br>        - <code>sizeof</code> 是一个运算符，用于获取数据类型或对象的大小（以字节为单位）。<br>    24. <strong>static：</strong><br>        - <code>static</code> 用于声明静态变量，表示变量的生命周期为整个程序运行期间。<br>    25. <strong>struct：</strong><br>        - <code>struct</code> 用于声明结构体类型。<br>    26. <strong>switch：</strong><br>        - <code>switch</code> 用于构建 switch 语句，实现多分支的条件选择。<br>    27. <strong>typedef：</strong><br>        - <code>typedef</code> 用于为数据类型定义新的名称。<br>    28. <strong>unsigned：</strong><br>        - <code>unsigned</code> 用于声明无符号整数类型的变量。<br>    29. <strong>void：</strong><br>        - <code>void</code> 用于表示函数无返回值，或指针无类型。<br>    30. <strong>volatile：</strong><br>        - <code>volatile</code> 用于声明变量是易变的，可能被程序以外的因素改变，因此编译器不应该对其进行优化。<br>    31. <strong>while：</strong><br>        - <code>while</code> 用于构建 while 循环。</p>
-<p>注意：<br>(1)<code>goto</code> 语句在 C 语言中用于无条件地将程序控制转移到指定的标签处。尽管 <code>goto</code> 在很多编程规范中被视为不良实践，因为它可能导致程序结构变得混乱难以理解，但在某些情况下它仍然是有用的。以下是一个简单的例子，演示了 <code>goto</code> 的用法：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    loop_start:</span><br><span class="line">        <span class="keyword">if</span> (i &gt;= <span class="number">5</span>) &#123;</span><br><span class="line">            <span class="keyword">goto</span> loop_end;  <span class="comment">// 跳转到标签 loop_end</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Iteration %d\n&quot;</span>, i);</span><br><span class="line">        i++;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">goto</span> loop_start;  <span class="comment">// 跳转到标签 loop_start</span></span><br><span class="line"></span><br><span class="line">    loop_end:</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Loop ends.\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在上述例子中，使用 <code>goto</code> 实现了一个简单的循环。程序执行时，首先进入 <code>loop_start</code> 标签处，然后检查 <code>i</code> 是否小于 5。如果是，就输出当前迭代次数，递增 <code>i</code>，然后跳转回 <code>loop_start</code> 标签。这样循环会一直执行直到 <code>i</code> 大于等于 5，然后跳转到 <code>loop_end</code> 标签，输出 “Loop ends.”。<br>但是，过度使用 <code>goto</code> 可能导致代码难以理解和维护，因此应该谨慎使用，并在可能的情况下选择更结构化的控制流构造，如 <code>for</code> 循环、<code>while</code> 循环和 <code>do-while</code> 循环。</p>
-<p>(2)<code>const</code> 和 <code>volatile</code> 修饰符可以一起使用，用于声明一个既是常量又是易变的对象。这在某些特殊的应用场景下是有用的。</p>
-<ul>
-<li><strong>const 和 volatile 的单独使用：</strong><ul>
-<li><code>const</code> 用于声明常量，表示变量的值在初始化后不能被修改。</li>
-<li><code>volatile</code> 用于声明易变的变量，表示变量的值可以在程序未明示的情况下被修改，例如由硬件或其他线程。</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> constantValue = <span class="number">10</span>;    <span class="comment">// 常量</span></span><br><span class="line"><span class="keyword">volatile</span> <span class="type">int</span> volatileValue = <span class="number">0</span>; <span class="comment">// 易变变量</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>const 和 volatile 一起使用：</strong></li>
-</ul>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="keyword">volatile</span> <span class="type">int</span> constVolatileValue = <span class="number">20</span>; <span class="comment">// 既是常量又是易变的变量</span></span><br></pre></td></tr></table></figure>
-
-<p>在这个例子 中，<code>constVolatileValue</code> 被声明为既是常量又是易变的变量。这种情况可能在嵌入式系统或与硬件交互的场景下出现，其中一个变量的值在运行时可以被改变，但在程序中的其他位置不能被修改。<br><code>const</code> 和 <code>volatile</code> 的组合使用应该谨慎，因为这样的变量可能会导致一些复杂的问题，例如代码的可读性下降。在一般情况下，尽可能避免过度使用这两个修饰符，以保持代码的清晰性和可维护性。</p>
-<p>二、运算符<br>    以下是 C 语言中常见的运算符，按照优先级从高到低的顺序排列：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. **圆括号运算符 `()`：**</span><br><span class="line">   - 用于改变运算符的结合性，明确指定表达式的计算顺序。</span><br><span class="line"></span><br><span class="line">2. **单目运算符：**</span><br><span class="line">   - `+` (正号)</span><br><span class="line">   - `-` (负号)</span><br><span class="line">   - `++` (前缀递增)</span><br><span class="line">   - `--` (前缀递减)</span><br><span class="line">   - `!` (逻辑非)</span><br><span class="line">   - `~` (按位取反)</span><br><span class="line">   - `(type)` (强制类型转换)</span><br><span class="line"></span><br><span class="line">3. **乘法、除法、取模运算符：**</span><br><span class="line">   - `*` (乘法)</span><br><span class="line">   - `/` (除法)</span><br><span class="line">   - `%` (取模)</span><br><span class="line"></span><br><span class="line">4. **加法和减法运算符：**</span><br><span class="line">   - `+` (加法)</span><br><span class="line">   - `-` (减法)</span><br><span class="line"></span><br><span class="line">5. **移位运算符：**</span><br><span class="line">   - `&lt;&lt;` (左移)</span><br><span class="line">   - `&gt;&gt;` (右移)</span><br><span class="line"></span><br><span class="line">6. **关系运算符：**</span><br><span class="line">   - `&lt;` (小于)</span><br><span class="line">   - `&gt;` (大于)</span><br><span class="line">   - `&lt;=` (小于等于)</span><br><span class="line">   - `&gt;=` (大于等于)</span><br><span class="line"></span><br><span class="line">7. **相等性运算符：**</span><br><span class="line">   - `==` (等于)</span><br><span class="line">   - `!=` (不等于)</span><br><span class="line"></span><br><span class="line">8. **按位与运算符 `&amp;`：**</span><br><span class="line"></span><br><span class="line">9. **按位异或运算符 `^`：**</span><br><span class="line"></span><br><span class="line">10. **按位或运算符 `|`：**</span><br><span class="line"></span><br><span class="line">11. **逻辑与运算符 `&amp;&amp;`：**</span><br><span class="line"></span><br><span class="line">12. **逻辑或运算符 `||`：**</span><br><span class="line"></span><br><span class="line">13. **条件运算符 `? :`：**</span><br><span class="line">    - 也称为三元运算符，形式为 `condition ? expr1 : expr2`。</span><br><span class="line"></span><br><span class="line">14. **赋值运算符 `=`：**</span><br><span class="line"></span><br><span class="line">15. **复合赋值运算符：**</span><br><span class="line">    - `+=`、`-=`、`*=`、`/=`、`%=`、`&amp;=`、`^=`、`|=`、`&lt;&lt;=`、`&gt;&gt;=`。</span><br><span class="line"></span><br><span class="line">16. **逗号运算符 `,`：**</span><br><span class="line">    - 用于连接多个表达式，按照从左到右的顺序计算。</span><br></pre></td></tr></table></figure>
-<p>注意：<br>    单目运算符 <code>++</code> 和 <code>--</code> 有两种形式，即前缀递增&#x2F;递减和后缀递增&#x2F;递减。它们的优先级是相同的，但是它们的结合性是不同的。下面是 <code>++</code> 和 <code>--</code> 这两个运算符的优先级及结合性：</p>
-<ol>
-<li><p><strong>单目运算符 <code>++</code> 和 <code>--</code>（前缀形式）：</strong></p>
-<ul>
-<li>优先级高于大多数其他运算符，结合性是右结合（从右到左计算）。</li>
-<li>示例：<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">++i;  <span class="comment">// 前缀递增</span></span><br><span class="line">--j;  <span class="comment">// 前缀递减</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><p><strong>单目运算符 <code>++</code> 和 <code>--</code>（后缀形式）：</strong></p>
-<ul>
-<li>优先级同样高于大多数其他运算符，但是结合性是左结合（从左到右计算）。</li>
-<li>示例：<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">k++;  <span class="comment">// 后缀递增</span></span><br><span class="line">m--;  <span class="comment">// 后缀递减</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ol>
-<p>由于这两种形式的结合性不同，前缀形式的 <code>++</code> 和 <code>--</code> 会先执行递增或递减操作，然后再参与其他运算，而后缀形式会先参与其他运算，然后再执行递增或递减操作。这种区别在表达式中的使用时需要注意，因为它可能影响到表达式的计算顺序。</p>
-<p>三、宏<br>编译时宏在程序编译的过程中起到了一些重要的作用，它们通过在源代码中进行预处理（Preprocessor）阶段的替换和操作，影响最终生成的目标代码。以下是编译时宏的一些主要作用：</p>
-<ol>
-<li><p><strong>代码替换：</strong> 宏允许在源代码中定义一些常量或代码片段，然后通过在预处理阶段进行替换，将宏的引用替换为具体的值或代码。这有助于提高代码的可维护性和灵活性。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MAX_SIZE 100</span></span><br><span class="line"><span class="type">int</span> <span class="built_in">array</span>[MAX_SIZE];</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>条件编译：</strong> 宏可以用于根据条件编译的需要动态地包含或排除一些代码块。通过使用条件编译，可以根据不同的情况选择性地编译代码。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> DEBUG_MODE</span></span><br><span class="line"><span class="meta">#<span class="keyword">ifdef</span> DEBUG_MODE</span></span><br><span class="line">    <span class="comment">// Debug-specific code</span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>文件包含：</strong> 宏可以用于生成文件路径或名称，从而在编译时动态地包含不同的文件。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> PLATFORM_HEADER <span class="string">&quot;platform_specific.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> PLATFORM_HEADER</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>防御式编程：</strong> 宏可以用于定义一些检查和断言，增强代码的健壮性。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> ASSERT(condition) <span class="keyword">if</span> (!(condition)) &#123; handle_assertion_failure(); &#125;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>调试信息：</strong> 宏可以在编译时添加或删除调试信息，以便在调试时更容易追踪问题。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> LOG(message) printf(<span class="string">&quot;Debug: %s\n&quot;</span>, message)</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>平台相关性：</strong> 宏可以用于标识不同平台下的特定代码块，使程序在不同平台上具有一致的行为。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifdef</span> _WIN32</span></span><br><span class="line">    <span class="comment">// Windows-specific code</span></span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined(__linux__)</span></span><br><span class="line">    <span class="comment">// Linux-specific code</span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>性能优化：</strong> 宏可以用于在编译时进行一些简单的性能优化，例如通过内联函数或循环展开。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> SQUARE(x) ((x) * (x))</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>需要注意的是，滥用宏可能导致代码的可读性下降，因此在使用宏时应该谨慎，并遵循良好的编码风格和最佳实践。</p>
-]]></content>
-      <categories>
-        <category>C语言</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>UML概述</title>
-    <url>/2023/10/29/UML%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>UML</category>
-      </categories>
-      <tags>
-        <tag>UML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>RTOS概述</title>
     <url>/2023/11/05/RTOS%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<p>1.定义：<br>    RTOS - Real-time operating system，即实时操作系统，又称即时操作系统，其是一种通用的任务管理框架，用于管理任务的运行和任务之间的交互，能够保证事件得到实时处理。与一般的操作系统相比，RTOS最大的特色是“实时性”，若有一个任务需要被执行，RTOS会在规定时间内执行该任务，而不会有较长的延时。</p>
@@ -101,6 +14,17 @@
       <tags>
         <tag>RTOS</tag>
         <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>UML概述</title>
+    <url>/2023/10/29/UML%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>UML</category>
+      </categories>
+      <tags>
+        <tag>UML</tag>
       </tags>
   </entry>
   <entry>
@@ -182,6 +106,82 @@
       </tags>
   </entry>
   <entry>
+    <title>C语言基础</title>
+    <url>/2023/11/21/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<p>一、关键字<br>    C语言的关键字是具有特殊含义的保留字，它们在编程中具有特定的用途，不能被用作标识符（变量名、函数名等）。以下是C语言的关键字：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">auto      double    int       struct</span><br><span class="line">break     else      long      switch</span><br><span class="line">case      enum      register  typedef</span><br><span class="line">char      extern    return    union</span><br><span class="line">const     float     short     unsigned</span><br><span class="line">continue  for       signed    void</span><br><span class="line">default   goto      sizeof    volatile</span><br><span class="line">do        if        static    while</span><br></pre></td></tr></table></figure>
+<p>下面是这些关键字的详细解释：<br>    1. <strong>auto：</strong><br>        - <code>auto</code> 关键字用于声明自动变量。自动变量是在函数内部声明的，其生命周期与函数调用的生命周期相同。<br>    2. <strong>break：</strong><br>        - <code>break</code> 用于在循环或 switch 语句中提前终止执行，跳出循环或 switch。<br>    3. <strong>case：</strong><br>        - <code>case</code> 用于 switch 语句中，表示匹配某个值时执行的代码块。<br>    4. <strong>char：</strong><br>        - <code>char</code> 用于声明字符类型的变量或函数返回值。<br>    5. <strong>const：</strong><br>        - <code>const</code> 用于声明常量，表示变量的值不能被修改。<br>    6. <strong>continue：</strong><br>        - <code>continue</code> 用于结束当前循环的当前迭代，继续下一次迭代。<br>    7. <strong>default：</strong><br>        - <code>default</code> 用于 switch 语句中，表示没有匹配到任何 case 时执行的代码块。<br>    8. <strong>do：</strong><br>        - <code>do</code> 用于构建 do-while 循环。<br>    9. <strong>double：</strong><br>        - <code>double</code> 用于声明双精度浮点数类型的变量。<br>    10. <strong>else：</strong><br>        - <code>else</code> 用于 if 语句中，表示在条件不满足时执行的代码块。<br>    11. <strong>enum：</strong><br>        - <code>enum</code> 用于声明枚举类型。<br>    12. <strong>extern：</strong><br>        - <code>extern</code> 用于声明外部变量或函数，表示这些变量或函数是在其他文件中定义的。<br>    13. <strong>float：</strong><br>        - <code>float</code> 用于声明单精度浮点数类型的变量。<br>    14. <strong>for：</strong><br>        - <code>for</code> 用于构建 for 循环。<br>    15. <strong>goto：</strong><br>        - <code>goto</code> 用于无条件跳转到程序中的标记语句。<br>    16. <strong>if：</strong><br>        - <code>if</code> 用于构建条件语句。<br>    17. <strong>int：</strong><br>    - <code>int</code> 用于声明整数类型的变量。<br>    18. <strong>long：</strong><br>        - <code>long</code> 用于声明长整数类型的变量。<br>    19. <strong>register：</strong><br>        - <code>register</code> 用于声明寄存器变量，提示编译器将变量存储在寄存器中，以提高访问速度。<br>    20. <strong>return：</strong><br>        - <code>return</code> 用于从函数中返回值。<br>    21. <strong>short：</strong><br>        - <code>short</code> 用于声明短整数类型的变量。<br>    22. <strong>signed：</strong><br>        - <code>signed</code> 用于声明有符号整数类型的变量。<br>    23. <strong>sizeof：</strong><br>        - <code>sizeof</code> 是一个运算符，用于获取数据类型或对象的大小（以字节为单位）。<br>    24. <strong>static：</strong><br>        - <code>static</code> 用于声明静态变量，表示变量的生命周期为整个程序运行期间。<br>    25. <strong>struct：</strong><br>        - <code>struct</code> 用于声明结构体类型。<br>    26. <strong>switch：</strong><br>        - <code>switch</code> 用于构建 switch 语句，实现多分支的条件选择。<br>    27. <strong>typedef：</strong><br>        - <code>typedef</code> 用于为数据类型定义新的名称。<br>    28. <strong>unsigned：</strong><br>        - <code>unsigned</code> 用于声明无符号整数类型的变量。<br>    29. <strong>void：</strong><br>        - <code>void</code> 用于表示函数无返回值，或指针无类型。<br>    30. <strong>volatile：</strong><br>        - <code>volatile</code> 用于声明变量是易变的，可能被程序以外的因素改变，因此编译器不应该对其进行优化。<br>    31. <strong>while：</strong><br>        - <code>while</code> 用于构建 while 循环。</p>
+<p>注意：<br>(1)<code>goto</code> 语句在 C 语言中用于无条件地将程序控制转移到指定的标签处。尽管 <code>goto</code> 在很多编程规范中被视为不良实践，因为它可能导致程序结构变得混乱难以理解，但在某些情况下它仍然是有用的。以下是一个简单的例子，演示了 <code>goto</code> 的用法：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    loop_start:</span><br><span class="line">        <span class="keyword">if</span> (i &gt;= <span class="number">5</span>) &#123;</span><br><span class="line">            <span class="keyword">goto</span> loop_end;  <span class="comment">// 跳转到标签 loop_end</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Iteration %d\n&quot;</span>, i);</span><br><span class="line">        i++;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">goto</span> loop_start;  <span class="comment">// 跳转到标签 loop_start</span></span><br><span class="line"></span><br><span class="line">    loop_end:</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Loop ends.\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在上述例子中，使用 <code>goto</code> 实现了一个简单的循环。程序执行时，首先进入 <code>loop_start</code> 标签处，然后检查 <code>i</code> 是否小于 5。如果是，就输出当前迭代次数，递增 <code>i</code>，然后跳转回 <code>loop_start</code> 标签。这样循环会一直执行直到 <code>i</code> 大于等于 5，然后跳转到 <code>loop_end</code> 标签，输出 “Loop ends.”。<br>但是，过度使用 <code>goto</code> 可能导致代码难以理解和维护，因此应该谨慎使用，并在可能的情况下选择更结构化的控制流构造，如 <code>for</code> 循环、<code>while</code> 循环和 <code>do-while</code> 循环。</p>
+<p>(2)<code>const</code> 和 <code>volatile</code> 修饰符可以一起使用，用于声明一个既是常量又是易变的对象。这在某些特殊的应用场景下是有用的。</p>
+<ul>
+<li><strong>const 和 volatile 的单独使用：</strong><ul>
+<li><code>const</code> 用于声明常量，表示变量的值在初始化后不能被修改。</li>
+<li><code>volatile</code> 用于声明易变的变量，表示变量的值可以在程序未明示的情况下被修改，例如由硬件或其他线程。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> constantValue = <span class="number">10</span>;    <span class="comment">// 常量</span></span><br><span class="line"><span class="keyword">volatile</span> <span class="type">int</span> volatileValue = <span class="number">0</span>; <span class="comment">// 易变变量</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>const 和 volatile 一起使用：</strong></li>
+</ul>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="keyword">volatile</span> <span class="type">int</span> constVolatileValue = <span class="number">20</span>; <span class="comment">// 既是常量又是易变的变量</span></span><br></pre></td></tr></table></figure>
+
+<p>在这个例子 中，<code>constVolatileValue</code> 被声明为既是常量又是易变的变量。这种情况可能在嵌入式系统或与硬件交互的场景下出现，其中一个变量的值在运行时可以被改变，但在程序中的其他位置不能被修改。<br><code>const</code> 和 <code>volatile</code> 的组合使用应该谨慎，因为这样的变量可能会导致一些复杂的问题，例如代码的可读性下降。在一般情况下，尽可能避免过度使用这两个修饰符，以保持代码的清晰性和可维护性。</p>
+<p>二、运算符<br>    以下是 C 语言中常见的运算符，按照优先级从高到低的顺序排列：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. **圆括号运算符 `()`：**</span><br><span class="line">   - 用于改变运算符的结合性，明确指定表达式的计算顺序。</span><br><span class="line"></span><br><span class="line">2. **单目运算符：**</span><br><span class="line">   - `+` (正号)</span><br><span class="line">   - `-` (负号)</span><br><span class="line">   - `++` (前缀递增)</span><br><span class="line">   - `--` (前缀递减)</span><br><span class="line">   - `!` (逻辑非)</span><br><span class="line">   - `~` (按位取反)</span><br><span class="line">   - `(type)` (强制类型转换)</span><br><span class="line"></span><br><span class="line">3. **乘法、除法、取模运算符：**</span><br><span class="line">   - `*` (乘法)</span><br><span class="line">   - `/` (除法)</span><br><span class="line">   - `%` (取模)</span><br><span class="line"></span><br><span class="line">4. **加法和减法运算符：**</span><br><span class="line">   - `+` (加法)</span><br><span class="line">   - `-` (减法)</span><br><span class="line"></span><br><span class="line">5. **移位运算符：**</span><br><span class="line">   - `&lt;&lt;` (左移)</span><br><span class="line">   - `&gt;&gt;` (右移)</span><br><span class="line"></span><br><span class="line">6. **关系运算符：**</span><br><span class="line">   - `&lt;` (小于)</span><br><span class="line">   - `&gt;` (大于)</span><br><span class="line">   - `&lt;=` (小于等于)</span><br><span class="line">   - `&gt;=` (大于等于)</span><br><span class="line"></span><br><span class="line">7. **相等性运算符：**</span><br><span class="line">   - `==` (等于)</span><br><span class="line">   - `!=` (不等于)</span><br><span class="line"></span><br><span class="line">8. **按位与运算符 `&amp;`：**</span><br><span class="line"></span><br><span class="line">9. **按位异或运算符 `^`：**</span><br><span class="line"></span><br><span class="line">10. **按位或运算符 `|`：**</span><br><span class="line"></span><br><span class="line">11. **逻辑与运算符 `&amp;&amp;`：**</span><br><span class="line"></span><br><span class="line">12. **逻辑或运算符 `||`：**</span><br><span class="line"></span><br><span class="line">13. **条件运算符 `? :`：**</span><br><span class="line">    - 也称为三元运算符，形式为 `condition ? expr1 : expr2`。</span><br><span class="line"></span><br><span class="line">14. **赋值运算符 `=`：**</span><br><span class="line"></span><br><span class="line">15. **复合赋值运算符：**</span><br><span class="line">    - `+=`、`-=`、`*=`、`/=`、`%=`、`&amp;=`、`^=`、`|=`、`&lt;&lt;=`、`&gt;&gt;=`。</span><br><span class="line"></span><br><span class="line">16. **逗号运算符 `,`：**</span><br><span class="line">    - 用于连接多个表达式，按照从左到右的顺序计算。</span><br></pre></td></tr></table></figure>
+<p>注意：<br>    单目运算符 <code>++</code> 和 <code>--</code> 有两种形式，即前缀递增&#x2F;递减和后缀递增&#x2F;递减。它们的优先级是相同的，但是它们的结合性是不同的。下面是 <code>++</code> 和 <code>--</code> 这两个运算符的优先级及结合性：</p>
+<ol>
+<li><p><strong>单目运算符 <code>++</code> 和 <code>--</code>（前缀形式）：</strong></p>
+<ul>
+<li>优先级高于大多数其他运算符，结合性是右结合（从右到左计算）。</li>
+<li>示例：<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">++i;  <span class="comment">// 前缀递增</span></span><br><span class="line">--j;  <span class="comment">// 前缀递减</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>单目运算符 <code>++</code> 和 <code>--</code>（后缀形式）：</strong></p>
+<ul>
+<li>优先级同样高于大多数其他运算符，但是结合性是左结合（从左到右计算）。</li>
+<li>示例：<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">k++;  <span class="comment">// 后缀递增</span></span><br><span class="line">m--;  <span class="comment">// 后缀递减</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<p>由于这两种形式的结合性不同，前缀形式的 <code>++</code> 和 <code>--</code> 会先执行递增或递减操作，然后再参与其他运算，而后缀形式会先参与其他运算，然后再执行递增或递减操作。这种区别在表达式中的使用时需要注意，因为它可能影响到表达式的计算顺序。</p>
+<p>三、宏<br>编译时宏在程序编译的过程中起到了一些重要的作用，它们通过在源代码中进行预处理（Preprocessor）阶段的替换和操作，影响最终生成的目标代码。以下是编译时宏的一些主要作用：</p>
+<ol>
+<li><p><strong>代码替换：</strong> 宏允许在源代码中定义一些常量或代码片段，然后通过在预处理阶段进行替换，将宏的引用替换为具体的值或代码。这有助于提高代码的可维护性和灵活性。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MAX_SIZE 100</span></span><br><span class="line"><span class="type">int</span> <span class="built_in">array</span>[MAX_SIZE];</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>条件编译：</strong> 宏可以用于根据条件编译的需要动态地包含或排除一些代码块。通过使用条件编译，可以根据不同的情况选择性地编译代码。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> DEBUG_MODE</span></span><br><span class="line"><span class="meta">#<span class="keyword">ifdef</span> DEBUG_MODE</span></span><br><span class="line">    <span class="comment">// Debug-specific code</span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>文件包含：</strong> 宏可以用于生成文件路径或名称，从而在编译时动态地包含不同的文件。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> PLATFORM_HEADER <span class="string">&quot;platform_specific.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> PLATFORM_HEADER</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>防御式编程：</strong> 宏可以用于定义一些检查和断言，增强代码的健壮性。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> ASSERT(condition) <span class="keyword">if</span> (!(condition)) &#123; handle_assertion_failure(); &#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>调试信息：</strong> 宏可以在编译时添加或删除调试信息，以便在调试时更容易追踪问题。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> LOG(message) printf(<span class="string">&quot;Debug: %s\n&quot;</span>, message)</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>平台相关性：</strong> 宏可以用于标识不同平台下的特定代码块，使程序在不同平台上具有一致的行为。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifdef</span> _WIN32</span></span><br><span class="line">    <span class="comment">// Windows-specific code</span></span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> defined(__linux__)</span></span><br><span class="line">    <span class="comment">// Linux-specific code</span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>性能优化：</strong> 宏可以用于在编译时进行一些简单的性能优化，例如通过内联函数或循环展开。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> SQUARE(x) ((x) * (x))</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>需要注意的是，滥用宏可能导致代码的可读性下降，因此在使用宏时应该谨慎，并遵循良好的编码风格和最佳实践。</p>
+]]></content>
+      <categories>
+        <category>C语言</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2024/12/29/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -230,6 +230,19 @@
       </tags>
   </entry>
   <entry>
+    <title>软件设计开发流程概述</title>
+    <url>/2023/10/29/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>软件设计</category>
+      </categories>
+      <tags>
+        <tag>软件设计开发流程</tag>
+        <tag>V-Cycle</tag>
+        <tag>ASPICE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>单片机概述</title>
     <url>/2023/11/18/%E5%8D%95%E7%89%87%E6%9C%BA%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<p>1.基本概念：<br>    单片机（Microcontroller），又常称为MCU（Microcontorller Uint），其是一种集成了中央处理器（CPU）、内存（RAM和ROM）、输入\输出端口（I\O）和定时器等功能于一体的微型计算机，其通常被用于嵌入式系统中以控制各种电子设备和系统。</p>
@@ -243,19 +256,6 @@
       <tags>
         <tag>MCU</tag>
         <tag>单片机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件设计开发流程概述</title>
-    <url>/2023/10/29/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>软件设计</category>
-      </categories>
-      <tags>
-        <tag>软件设计开发流程</tag>
-        <tag>V-Cycle</tag>
-        <tag>ASPICE</tag>
       </tags>
   </entry>
   <entry>
