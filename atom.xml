@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>芊芊芝栒的博客</title>
+  
+  <subtitle>随笔杂记</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2025-01-11T09:37:57.397Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>芊芊芝栒</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo指令</title>
+    <link href="http://example.com/2025/01/11/hexo%E6%8C%87%E4%BB%A4/"/>
+    <id>http://example.com/2025/01/11/hexo%E6%8C%87%E4%BB%A4/</id>
+    <published>2025-01-11T07:26:58.000Z</published>
+    <updated>2025-01-11T09:37:57.397Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;hexo-init&quot;&gt;&lt;a href=&quot;#hexo-init&quot; class=&quot;headerlink&quot; title=&quot;hexo init&quot;&gt;&lt;/a&gt;hexo init&lt;/h2&gt;&lt;p&gt;初始化一个新的hexo项目&lt;/p&gt;
+&lt;h3 id=&quot;用法&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="http://example.com/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="blog" scheme="http://example.com/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2024/12/29/hello-world/"/>
+    <id>http://example.com/2024/12/29/hello-world/</id>
+    <published>2024-12-29T03:59:04.176Z</published>
+    <updated>2024-12-29T03:59:04.178Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>探索 Windows 注册表中的应用卸载信息</title>
+    <link href="http://example.com/2024/12/23/Windows%E6%B3%A8%E5%86%8C%E8%A1%A8/"/>
+    <id>http://example.com/2024/12/23/Windows%E6%B3%A8%E5%86%8C%E8%A1%A8/</id>
+    <published>2024-12-23T14:41:05.000Z</published>
+    <updated>2024-12-29T03:59:04.171Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Windows</summary>
+        
+      
+    
+    
+    
+    <category term="Windows" scheme="http://example.com/categories/Windows/"/>
+    
+    <category term="系统管理" scheme="http://example.com/categories/Windows/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/"/>
+    
+    
+    <category term="Windows" scheme="http://example.com/tags/Windows/"/>
+    
+    <category term="注册表" scheme="http://example.com/tags/%E6%B3%A8%E5%86%8C%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C语言基础</title>
+    <link href="http://example.com/2023/11/21/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/"/>
+    <id>http://example.com/2023/11/21/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</id>
+    <published>2023-11-21T00:47:41.000Z</published>
+    <updated>2024-12-29T03:59:04.151Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;一、关键字&lt;br&gt;    C语言的关键字是具有特殊含义的保留字，它们在编程中具有特定的用途，不能被用作标识符（变量名、函数名等）。以下是C语言的关键字：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    <category term="C语言" scheme="http://example.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="C语言" scheme="http://example.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>单片机概述</title>
+    <link href="http://example.com/2023/11/18/%E5%8D%95%E7%89%87%E6%9C%BA%E6%A6%82%E8%BF%B0/"/>
+    <id>http://example.com/2023/11/18/%E5%8D%95%E7%89%87%E6%9C%BA%E6%A6%82%E8%BF%B0/</id>
+    <published>2023-11-18T03:41:13.000Z</published>
+    <updated>2024-12-29T03:59:04.192Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.基本概念：&lt;br&gt;    单片机（Microcontroller），又常称为MCU（Microcontorller</summary>
+        
+      
+    
+    
+    
+    <category term="MCU" scheme="http://example.com/categories/MCU/"/>
+    
+    <category term="单片机" scheme="http://example.com/categories/MCU/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+    
+    <category term="MCU" scheme="http://example.com/tags/MCU/"/>
+    
+    <category term="单片机" scheme="http://example.com/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RTOS概述</title>
+    <link href="http://example.com/2023/11/05/RTOS%E6%A6%82%E8%BF%B0/"/>
+    <id>http://example.com/2023/11/05/RTOS%E6%A6%82%E8%BF%B0/</id>
+    <published>2023-11-05T08:51:39.000Z</published>
+    <updated>2024-12-29T03:59:04.158Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.定义：&lt;br&gt;    RTOS - Real-time operating</summary>
+        
+      
+    
+    
+    
+    <category term="RTOS" scheme="http://example.com/categories/RTOS/"/>
+    
+    
+    <category term="RTOS" scheme="http://example.com/tags/RTOS/"/>
+    
+    <category term="操作系统" scheme="http://example.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UML概述</title>
+    <link href="http://example.com/2023/10/29/UML%E6%A6%82%E8%BF%B0/"/>
+    <id>http://example.com/2023/10/29/UML%E6%A6%82%E8%BF%B0/</id>
+    <published>2023-10-29T03:46:23.000Z</published>
+    <updated>2024-12-29T03:59:04.165Z</updated>
+    
+    
+    
+    
+    <category term="UML" scheme="http://example.com/categories/UML/"/>
+    
+    
+    <category term="UML" scheme="http://example.com/tags/UML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件设计开发流程概述</title>
+    <link href="http://example.com/2023/10/29/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E6%A6%82%E8%BF%B0/"/>
+    <id>http://example.com/2023/10/29/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E6%A6%82%E8%BF%B0/</id>
+    <published>2023-10-29T03:40:14.000Z</published>
+    <updated>2024-12-29T03:59:04.198Z</updated>
+    
+    
+    
+    
+    <category term="软件设计" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="软件设计开发流程" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/"/>
+    
+    <category term="V-Cycle" scheme="http://example.com/tags/V-Cycle/"/>
+    
+    <category term="ASPICE" scheme="http://example.com/tags/ASPICE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码调试概述</title>
+    <link href="http://example.com/2023/10/29/%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95%E6%A6%82%E8%BF%B0/"/>
+    <id>http://example.com/2023/10/29/%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95%E6%A6%82%E8%BF%B0/</id>
+    <published>2023-10-29T03:35:46.000Z</published>
+    <updated>2024-12-29T03:59:04.184Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.代码调试概念：&lt;br&gt;    调试一般是指通过一些方法手段发现、定位软件运行中的错误并加以修复的过程。&lt;/p&gt;
+&lt;p&gt;2.代码调试作用：&lt;br&gt;   </summary>
+        
+      
+    
+    
+    
+    <category term="代码调试" scheme="http://example.com/categories/%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95/"/>
+    
+    
+    <category term="代码调试" scheme="http://example.com/tags/%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件设计概述</title>
+    <link href="http://example.com/2023/10/29/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%A6%82%E8%BF%B0/"/>
+    <id>http://example.com/2023/10/29/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%A6%82%E8%BF%B0/</id>
+    <published>2023-10-29T02:49:43.000Z</published>
+    <updated>2024-12-29T03:59:04.204Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.定义：&lt;br&gt;    软件结构设计是一种面向数据流的设计方法，其目的为确定软件系统中每个过程的模块组成以及模块之间的关系，其主要过程为将软件需求阶段产生的系统模型转化为软件设计模型。&lt;/p&gt;
+&lt;p&gt;2.分类：&lt;br&gt;    (1)概念上，软件设计分为：&lt;br&gt;    </summary>
+        
+      
+    
+    
+    
+    <category term="软件设计" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="软件设计" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+</feed>
